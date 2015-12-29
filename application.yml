@@ -1,3 +1,3 @@
 service:
-  defaultMinMs: 200
-  defaultMaxMs: 500
+  defaultMinMs: 100
+  defaultMaxMs: 150
