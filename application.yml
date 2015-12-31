@@ -1,6 +1,6 @@
 service:
-  defaultMinMs: 200
-  defaultMaxMs: 500
+  defaultMinMs: 20
+  defaultMaxMs: 50
   
 eureka:
   instance:
