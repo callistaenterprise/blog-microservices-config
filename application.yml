@@ -1,6 +1,6 @@
 service:
-  defaultMinMs: 20
-  defaultMaxMs: 50
+  defaultMinMs: 200
+  defaultMaxMs: 500
   
 #eureka:
 #  instance:
