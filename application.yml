@@ -11,6 +11,9 @@ logging:
     # Set INFO to see the allocated port
     org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer: INFO
     org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainer: INFO
+    # Set DEBUG level on Hystrix to get an error message when a fallback method is used.
+    com.netflix.hystrix: DEBUG
+    com.netflix.hystrix.strategy.properties.HystrixPropertiesChainedArchaiusProperty: WARN
     se.callista: INFO
   
 #eureka:
