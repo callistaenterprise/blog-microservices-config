@@ -9,8 +9,8 @@ logging:
     org.springframework.cloud.config.client.ConfigServicePropertySourceLocator: INFO
     org.springframework.retry.support.RetryTemplate: DEBUG
     # Set INFO to see the allocated port
-    org.springframework.boot.context.embedded.TomcatEmbeddedServletContainer: INFO
-    org.springframework.boot.context.embedded.UndertowEmbeddedServletContainer: INFO
+    org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer: INFO
+    org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainer: INFO
     se.callista: INFO
   
 #eureka:
