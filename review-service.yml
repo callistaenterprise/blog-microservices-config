@@ -1,5 +1,5 @@
 service:
-  defaultMinMs: 10
-  defaultMaxMs: 30
-#  defaultMinMs: 5000
-#  defaultMaxMs: 5000
+#  defaultMinMs: 10
+#  defaultMaxMs: 30
+  defaultMinMs: 5000
+  defaultMaxMs: 5000
