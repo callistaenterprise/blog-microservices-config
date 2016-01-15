@@ -1,6 +1,6 @@
 service:
   defaultMinMs: 5
-  defaultMaxMs: 15
+  defaultMaxMs: 20
 
 logging:
   level:
