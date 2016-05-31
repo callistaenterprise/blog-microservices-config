@@ -6,6 +6,9 @@ logging:
   level:
     root: WARN
     
+    # FIXME: Get rid on NPE-exceptions in SC 1.1
+    com.netflix.hystrix.contrib.javanica.command.GenericCommand: ERROR
+    
     # Get info on failed OAuth access token validations
     org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoTokenServices: INFO
 
