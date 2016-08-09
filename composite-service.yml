@@ -1,0 +1,29 @@
+server:
+  ssl:
+    enabled: false
+    # Problem with trust-store properties?
+    #
+    # Instead use: java -Djavax.net.debug=ssl -Djavax.net.ssl.trustStore=src/main/resources/truststore.jks -Djavax.net.ssl.trustStorePassword=password -jar build/libs/*.jar
+    #
+    # trust-store: classpath:truststore.jks
+    trust-store: src/main/resources/truststore.jks
+    trust-store-password: password
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: https://localhost:9999/uaa/user
+
+management:
+  security:
+    enabled: false
+
+---
+# For deployment in Docker containers
+spring:
+  profiles: docker
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: https://auth:9999/uaa/user
