@@ -10,6 +10,9 @@ logging:
     root: WARN
     se.callista: INFO
 
+    # Set DEBUG level to activate our log-filter to log each request and response
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
     # FIXME: Get rid on NPE-exceptions in SC 1.1
     com.netflix.hystrix.contrib.javanica.command.GenericCommand: ERROR
     
