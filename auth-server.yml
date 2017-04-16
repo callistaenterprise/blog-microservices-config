@@ -1,0 +1,42 @@
+server:
+  port: 9999
+  contextPath: /uaa
+  ssl:
+    key-store: classpath:server.jks
+    key-store-password: password
+    key-password: password
+
+
+security.user.password: password
+
+security.oauth2.client:
+  clientId: acme
+  clientSecret: acmesecret
+  authorized-grant-types: authorization_code,refresh_token,implicit,password,client_credentials
+  scope: webshop
+
+logging.level:
+  root: WARN
+  org.springframework.security.oauth2: DEBUG
+  org.springframework.security.oauth2.config.annotation.web.configurers.FrameworkEndpointHandlerMapping: INFO
+  org.springframework.security.oauth2.provider.client.ClientCredentialsTokenGranter: DEBUG
+  org.springframework.security.oauth2.provider.password.ResourceOwnerPasswordTokenGranter: DEBUG
+  org.springframework.security.oauth2.provider.code.AuthorizationCodeTokenGranter: DEBUG
+  org.springframework.security.oauth2.provider.implicit.ImplicitTokenGranter: DEBUG
+  org.springframework.security.oauth2.provider.approval.ApprovalStoreUserApprovalHandler: DEBUG
+  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint: INFO
+  org.springframework.security.oauth2.provider.approval.AuthorizationEndpoint: INFO
+
+  # Set INFO to see the allocated port
+  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer: INFO
+  org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainer: INFO
+
+  se.callista: INFO
+
+---
+# For deployment in Docker containers
+spring:
+  profiles: docker
+
+server:
+  port: 9999
