@@ -1,5 +1,7 @@
 #service:
 #  defaultMinMs: 6000
 #  defaultMaxMs: 6000
+#  minStrength: 12
+#  maxStrength: 14
 
 #logging.level.se.callista: DEBUG
