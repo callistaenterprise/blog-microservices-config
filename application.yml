@@ -36,6 +36,9 @@ logging:
     com.netflix.hystrix: DEBUG
     com.netflix.hystrix.strategy.properties.HystrixPropertiesChainedArchaiusProperty: WARN
 
+    # To get rid of fake WARN messages: "Deprecated trace headers detected. Please upgrade Sleuth to 1.1 or start sending headers present in the TraceMessageHeaders class",
+    org.springframework.cloud.sleuth.instrument.messaging.MessagingSpanExtractor: ERROR
+
 spring.rabbitmq:
   host: localhost
   port: 5672
