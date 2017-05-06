@@ -5,3 +5,5 @@ service:
 #  maxStrength: 16
 
 #logging.level.se.callista: DEBUG
+
+my-secret-property: '{cipher}cfdfe0ed3eeb9dc406508d4a5a7124e7192def5422a86bd5183ff00eb6fb1d77'
